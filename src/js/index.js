@@ -68,14 +68,14 @@ document.addEventListener('DOMContentLoaded', () => {
       animOnScroll();
     }, 300);
   }
-
+  // scroll
   const anchors = document.querySelectorAll('a[href*="#"]');
 
   for (const anchor of anchors) {
     anchor.addEventListener('click', function(event) {
       event.preventDefault();
-      const blockId = anchor.getAttribute('href');
-      document.querySelector('' + blockId).scrollIntoView({
+      const blockID = anchor.getAttribute('href');
+      document.querySelector('' + blockID).scrollIntoView({
         behavior: 'smooth',
         block: 'start',
       });
