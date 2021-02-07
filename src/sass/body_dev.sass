@@ -1,3 +1,4 @@
+//------------offer
 .offer
     background-image: url('./../img/bg_head.jpg')
     background-position: center center
@@ -59,8 +60,8 @@
         background-size: 12%
         transform: rotate(180deg)
 
-.swiper-button-next,
-.swiper-button-prev
+.btn-top-next,
+.btn-top-prev
     background-color: rgba(black, 0.5)
     border-radius: 50%
     width: 70px
@@ -71,3 +72,110 @@
     &:hover
         background-color: rgba(black, 1)
 
+//------------disegn
+
+.interior
+    display: flex
+    padding: 170px 0 200px 0
+    flex-wrap: wrap
+.interior__item__title
+    font-size: 40px
+    font-weight: 500
+.interior__item__text
+    font-size: 20px
+    font-weight: 400
+    padding: 45px 0
+.interior__item
+    padding: 0 30px
+    flex: 0 0 50%
+    max-width: 50%
+.interior__item__foto
+    padding: 0 90px 0 120px
+.interior__item__btn
+    button
+        text-transform: uppercase
+        font-size: 13px
+        font-weight: 700
+        border: solid 2px $text-color 
+        color: $text-color 
+        border-radius: 30px
+        background: none
+        padding: 21px 67px
+        transition: 0.3s
+        &:hover
+            background: lighten($text-color, 90% )
+
+
+.furniture__inner
+    background: #F8F6F5
+    display: flex
+    padding: 80px 75px 100px 75px 
+    position: relative
+.furniture__text 
+    font-size: 40px
+    font-weight: 500
+    // line-height: 1
+.furniture__info
+    padding-right: 100px
+.furniture__title
+    font-size: 20px
+    font-weight: 500
+    opacity: 0.5
+.furniture__bg 
+    // width: 610px
+    // height: 600px
+    position: absolute
+    right: 0
+    top: 50%
+    transform: translateY(-50%)
+    padding-right: 30px
+.furniture__item
+    flex: 0 0 50%
+    max-width: 50%
+
+.furniture
+    margin-bottom: 165px
+
+//------------feedback
+.feedback
+    background-color: #F8F6F5
+    
+.feedback__title
+    font-size: 40px
+    font-weight: 500
+    text-align: center
+    padding: 115px 0 15px 0
+
+.feedback-slide__inner
+    text-align: center
+.feedback__text
+    padding: 0 200px
+
+.feedback__lvl
+    font-size: 18px
+    colro: #626262
+
+.feedback__foto
+    padding: 40px 0 25px 0
+.swiper-container-feedback
+    height: auto
+.feedback__text
+    font-size: 20px
+    font-style: italic
+    margin-bottom: 60px
+.feedback__name
+    padding-bottom: 85px
+
+.btn-feedback-next,
+.btn-feedback-prev
+    background-color: $black  
+    border-radius: 50%
+    width: 55px
+    height: 55px
+    z-index: 5
+    position: absolute
+    transition: 0.3s
+    box-shadow: 0 3px 6px rgba($black, 0.5)
+    &:hover
+        background-color: $form-error-text-color 
+        box-shadow: 0 3px 6px rgba($form-error-text-color , 0.5)
