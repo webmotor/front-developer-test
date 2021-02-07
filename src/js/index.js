@@ -14,22 +14,15 @@ document.addEventListener('DOMContentLoaded', () => {
     touchRatio: 1,
     grabCursor: true,
     loop: true,
-    // mousewheel: {
-    //   sensitivity: 2,
+    effect: 'slide',
+
+    // effect: 'flip',
+    // flipEffect: {
+    //   slideShadow: true,
+    //   limitRotation: true,
     // },
-    effect: 'flip',
-    flipEffect: {
-      slideShadow: true,
-      limitRotation: true,
-    },
   });
 
-  new Swiper('.swiper-container-feedback', {
-    effect: 0,
-  });
-
-  // const animItems = document.querySelectorAll('._anim__items');
-  // console.log(animItems);
 
   // // animation
   const animItems = document.querySelectorAll('._anim__items');
