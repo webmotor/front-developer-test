@@ -18,6 +18,10 @@ body {
   font-weight: 400;
   min-height: 100%;
 }
+
+img {
+  max-width: 100%;
+}
 .main-content {
   flex-grow: 1;
 }
@@ -26,6 +30,7 @@ body {
   max-width: 1296px;
   margin-left: auto;
   margin-right: auto;
+  padding: 0 25px;
 }
 .container.bg {
   max-width: 1276px;
